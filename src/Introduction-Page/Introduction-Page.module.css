@@ -1,0 +1,37 @@
+.container {
+    width: 100%;
+    height: auto;
+}
+
+.Intro_section {
+    min-height: 100vh;
+    height: fit-content;
+    padding: 6% 4%;
+    display: flex;
+    align-items: center;
+    background-color: var(--PaperWhite-color);
+}
+
+.left img {
+    width: 65vh;
+    height: 80vh;
+    /* filter: drop-shadow(-40px 40px 0px #DCDCDC); */
+    box-shadow: -40px 40px 0px #DCDCDC;
+    object-fit: cover;
+}
+
+.middle {
+    padding-left: 4%;
+    padding-bottom: 15%;
+}
+
+.middle h1 {
+    margin: 0;
+    font-size: calc(100% + 5vw);
+
+}
+
+.middle h2 {
+    margin: 0;
+    font-size: calc(100% + 2vw);
+}

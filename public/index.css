@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    scroll-behavior: smooth;
+
+    /* letter-spacing: 0.1rem; */
+}
+
+
+:root {
+    --PaperWhite-color: #F5F5F5;
+    --Orange-color: #FFBF63;
+    --GraphiteBlack-color: #282828;
+    --PaperGrey-color: #DCDCDC;
+    --RockGrey-color: #C8C8C8;
+    --Tag-Color: #323232;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
