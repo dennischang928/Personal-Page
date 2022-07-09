@@ -41,7 +41,7 @@ export const Project3 = {
 
     thumbnail: Project3_Thumbnail,
     backgroundImage: Project3_Background,
-    tags: ["#Mobile-First", "#Node", "#ReactJS", "Mongodb", "Mongoose", "#API-Server", "#ExpressJS"],
+    tags: ["#Mobile-First", "#Node", "#ReactJS", "#Mongodb", "#Mongoose", "#API-Server", "#ExpressJS"],
     detail_of_the_project_url: "https://drive.google.com/file/d/1go-knV-2mzf3E9JWEKV9b18wUE6XKLUa/view?usp=sharing",
     details_BTN_text: (<div><PictureAsPdfIcon /> Details</div>),
     embed_video: (
