@@ -26,14 +26,14 @@
 
 
 .Interests_Part {
-    width: 500px;
+    width: 470px;
     margin-top: 3%;
     display: flex;
     flex-direction: column;
 }
 
 .Interests_Part h1 {
-    font-size: 44px;
+    font-size: 2.2rem;
 }
 
 

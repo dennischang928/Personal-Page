@@ -70,37 +70,40 @@ const App = () => {
     })
 
 
-    const Home = () => {
-        return (
-            <div >
-                <Nav isVisible={true}
-                    onIntroduction_Page_Click={scrollTo_Introduction_PageRef}
-                    onAboutMe_Page_Click={scrollTo_AboutMe_PageRef}
-                    onProject_Page_Click={scrollTo_Project_PageRef}
-                    onContact_Click={scrollTo_ContactRef} />
-                <div ref={Introduction_PageRef}>
-                    <Introduction_Page />
-                </div>
-                <div ref={AboutMe_PageRef}>
-                    <AboutMe_Page />
-                </div>
-                <div ref={Project_PageRef}>
-
-                    <NavBar
-                        title="Projects"
+    const Home_Page =
+        (
+            <Route path="/" element={
+                <div >
+                    <Nav isVisible={true}
                         onIntroduction_Page_Click={scrollTo_Introduction_PageRef}
                         onAboutMe_Page_Click={scrollTo_AboutMe_PageRef}
                         onProject_Page_Click={scrollTo_Project_PageRef}
-                        onContact_Click={scrollTo_ContactRef}
-                    />
+                        onContact_Click={scrollTo_ContactRef} />
+                    <div ref={Introduction_PageRef}>
+                        <Introduction_Page />
+                    </div>
+                    <div ref={AboutMe_PageRef}>
+                        <AboutMe_Page />
+                    </div>
+                    <div ref={Project_PageRef}>
 
-                    {Display_Project_Pages}
-                </div>
-                <div ref={ContactRef}>
-                    <Contact />
-                </div>
-            </div >)
-    }
+                        <NavBar
+                            title="Projects"
+                            onIntroduction_Page_Click={scrollTo_Introduction_PageRef}
+                            onAboutMe_Page_Click={scrollTo_AboutMe_PageRef}
+                            onProject_Page_Click={scrollTo_Project_PageRef}
+                            onContact_Click={scrollTo_ContactRef}
+                        />
+
+                        {Display_Project_Pages}
+                    </div>
+                    <div ref={ContactRef}>
+                        <Contact />
+                    </div>
+                </div >
+            } />
+        )
+
 
     const AllProjects_Detail_Pages = Project_Page_Items.map((e, index, array) => {
         console.log(`/${e.id}`)
@@ -139,49 +142,9 @@ const App = () => {
 
     return (
         <Routes>
-            <Route path="/" element={Home()} />
+            {Home_Page}
             {AllProjects_Detail_Pages}
         </Routes>
     )
 }
 export default App
-
-    // const Home = () => {
-    //     return (
-
-    //     )
-    // }
-
-    // return (
-    // <div >
-    //     <Nav isVisible={true} />
-    //     <div ref={Introduction_PageRef}>
-    //         <Introduction_Page />
-    //     </div>
-    //     <div ref={AboutMe_PageRef}>
-    //         <AboutMe_Page />
-    //     </div>
-    //     <NavBar
-    //         onIntroduction_Page_Click={scrollTo_Introduction_PageRef}
-    //         onAboutMe_Page_Click={scrollTo_AboutMe_PageRef}
-    //     />
-    //     <Project_Page sView_all_BTN_Visible={false} id="Project_Page" backgroundImage={Project1_Background} />
-    //     <Project_Page isView_all_BTN_Visible={true} backgroundImage={Project2_Background} />
-    // <Contact />
-    // </div>
-    // )
-
-    // return (
-    //     <div>
-    //         <NavBar
-    //             title="Rubik’s Cube Solver"
-    //             onIntroduction_Page_Click={scrollTo_Introduction_PageRef}
-    //             onAboutMe_Page_Click={scrollTo_AboutMe_PageRef}
-    //         />
-    //         <Detailed_Project_Page
-    //             Cover_Image={Project1_Cover_Image}
-    //             Abstract_Images={Project1_Abstract_Images}
-    //             Gallery_Images={Project1_Gallery_Images}
-    //         />
-    //         <Contact />
-    //     </div>)
