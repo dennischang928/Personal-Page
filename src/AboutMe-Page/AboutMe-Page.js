@@ -27,13 +27,11 @@ const AboutMe_Page = ({ ref }) => {
                 </p>
 
                 <p className={styles.Mparagraph}>
-                    Hi, I am Dennis. I am an F3 student from Macau. I am interested in
+                    Hi, I am Dennis. I am an F3 student from Macau.
+                    I am interested in
                     Engineering, Programming, and Robotics! I love designing and creating
                     robots from scratch. When I first discovered Engineering and Robotics, I realized I’d
-                    found the crossroads of everything I was interested in: Design, Physics, and Computer programming.
-                    Since then, I started to create robots in the work-flow of design, prototyping, and testing.
-                    Until now, I had worked on 4 projects, which included robotics engineering, computer programming,
-                    software engineering and electrical engineering.
+                    found the crossroads of everything I was interested in: Design, Physics, and Computer Programming.
                 </p>
             </div>
             <Interest_Section styles={styles} />
