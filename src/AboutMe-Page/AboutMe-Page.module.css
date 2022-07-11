@@ -18,7 +18,11 @@
         font-size: calc(100% + 5Vmin)
     }
 
-    .AboutMe_Section .Content_Part p {
+    .AboutMe_Section .Content_Part .Mparagraph {
+        display: none;
+    }
+
+    .AboutMe_Section .Content_Part .Nparagraph {
         margin-top: 20px;
         text-align: left;
         line-height: 150%;
@@ -41,7 +45,11 @@
         font-size: calc(100% + 7Vmin);
     }
 
-    .AboutMe_Section .Content_Part p {
+    .AboutMe_Section .Content_Part .Nparagraph {
+        display: none;
+    }
+
+    .AboutMe_Section .Content_Part .Mparagraph {
         margin-top: 2vh;
         text-align: left;
         line-height: 150%;
