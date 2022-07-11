@@ -1,4 +1,7 @@
 import React from "react"
+
+import TypeAnimation from 'react-type-animation';
+
 import styles from './Introduction-Page.module.css'
 
 const Introduction_Page = () => {
@@ -9,16 +12,32 @@ const Introduction_Page = () => {
                     <img src={require("../Images/Intro.jpg")} alt="" />
                 </div>
                 <div className={styles.middle}>
-                    <h1>Hi, I'm Dennis</h1>
-                    <h2>I'm a Electrical Engineer</h2>
+                    <TypeAnimation
+                        cursor={false}
+                        sequence={['', 100, 'Hi, I am Dennis']}
+                        wrapper="h1"
+                    />
+                    <TypeAnimation
+                        cursor={false}
+                        sequence={['', 1000, 'I am a Electrical Engineer']}
+                        wrapper="h2"
+                    />
                 </div>
             </div>
             <div className={styles.MIntro_section} id="Intro-section">
-                <h1>Hi, I'm Dennis</h1>
+                <TypeAnimation
+                    cursor={false}
+                    sequence={['', 100, 'Hi, I am Dennis']}
+                    wrapper="h1"
+                />
                 <div className={styles.CroppedImage}>
                     <img src={require("../Images/Intro.jpg")} alt="" />
                 </div>
-                <h2>I'm a Electrical Engineer</h2>
+                <TypeAnimation
+                    cursor={false}
+                    sequence={['', 1000, 'I am a Electrical Engineer']}
+                    wrapper="h2"
+                />
             </div>
         </div >
 
