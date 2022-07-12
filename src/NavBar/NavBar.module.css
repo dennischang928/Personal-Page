@@ -1,43 +1,81 @@
-
-.nav {
-    background-color: var(--Orange-color);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1% 15%;
+.container {
     position: sticky;
     opacity: 80%;
     top: 0;
     z-index: 99;
 }
 
+.nav {
+    background-color: var(--Orange-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .nav .Left_Container,
-.nav .Right_Container {
+.nav .NRight_Container {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.nav .Left_Container h1 {
-    font-size: 1.5rem;
-}
 
-.nav .Right_Container ul {
+
+.nav .NRight_Container ul {
     list-style: none;
     display: flex;
     flex-direction: row;
 }
 
-.nav .Right_Container ul li:not(:last-child) {
+.nav .NRight_Container ul li:not(:last-child) {
     margin-right: 10px;
 }
 
 
 
-.nav .Right_Container ul li a {
+.nav .NRight_Container ul li a {
+    position: absolute;
     cursor: pointer;
     color: #000;
     text-decoration: none;
     width: 28px;
     margin: 0 15px;
+}
+
+
+@media screen and (min-width: 1000px) {
+    .nav {
+        padding: 1% 15vw;
+        height: 6.5vh;
+    }
+
+    .nav .Left_Container h1 {
+        font-size: calc(100% + 1.45vmin);
+    }
+
+    .nav .MRight_Container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav {
+        /* -webkit-transition: height 1s;
+        -moz-transition: height 1s;
+        -ms-transition: height 1s;
+        -o-transition: height 1s;
+        transition: height 1s;
+        overflow: hidden; */
+
+        padding: 1% 8%;
+        height: 6.5vh;
+    }
+
+    .nav .Left_Container h1 {
+        font-size: calc(100% + 1.5vmin);
+    }
+
+    .nav .NRight_Container {
+        display: none;
+    }
 }

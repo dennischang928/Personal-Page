@@ -38,7 +38,7 @@ const Project_Page = ({ id, title, content, thumbnail, backgroundImage, tags, is
                     </div>
                     <div className={styles.Tag_Section}>
                         <ul>
-                            {tags.map((e) => { return (<li>{e}</li>) })}
+                            {tags.map((e) => { return (<li key={e}>{e}</li>) })}
                         </ul>
                     </div>
                     <a href={`/${id}`} style={{ textDecoration: "none", color: "#000" }}>

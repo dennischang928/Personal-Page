@@ -20,6 +20,7 @@ const App = () => {
     const Project_PageRef = useRef(null);
     const ContactRef = useRef(null);
 
+    
 
     const scrollTo_Introduction_PageRef = () => {
         try {
@@ -86,7 +87,6 @@ const App = () => {
                         <AboutMe_Page />
                     </div>
                     <div ref={Project_PageRef}>
-
                         <NavBar
                             title="Projects"
                             onIntroduction_Page_Click={scrollTo_Introduction_PageRef}
