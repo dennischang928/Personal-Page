@@ -25,7 +25,7 @@ const NavBar = ({ title, onIntroduction_Page_Click, onAboutMe_Page_Click, onProj
                 </div>
                 <div className={styles.MRight_Container}>
 
-                    <Hamburger size={20} toggle={(e) => { setIsList_Opened(e); onProject_Page_Click() }} toggled={IsList_Opened} />
+                    <Hamburger size={20} toggle={(e) => { onProject_Page_Click(); setIsList_Opened(e); }} toggled={IsList_Opened} />
                 </div>
             </div>
             <Hamburger_List IsList_Opened={IsList_Opened} />

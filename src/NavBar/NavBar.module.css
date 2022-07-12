@@ -24,6 +24,7 @@
 .nav .NRight_Container ul {
     list-style: none;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
 }
 
@@ -34,7 +35,6 @@
 
 
 .nav .NRight_Container ul li a {
-    position: absolute;
     cursor: pointer;
     color: #000;
     text-decoration: none;
@@ -60,12 +60,6 @@
 
 @media screen and (max-width: 1000px) {
     .nav {
-        /* -webkit-transition: height 1s;
-        -moz-transition: height 1s;
-        -ms-transition: height 1s;
-        -o-transition: height 1s;
-        transition: height 1s;
-        overflow: hidden; */
 
         padding: 1% 8%;
         height: 6.5vh;
