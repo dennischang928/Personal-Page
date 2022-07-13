@@ -32,9 +32,7 @@ const Project_Page = ({ id, title, content, thumbnail, backgroundImage, tags, is
                         <h1>{title}</h1>
                     </div>
                     <div className={styles.content}>
-                        <p>
-                            {content}
-                        </p>
+                        {content}
                     </div>
                     <div className={styles.Tag_Section}>
                         <ul>

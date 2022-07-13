@@ -67,9 +67,10 @@ const App = () => {
     }
 
 
-    const Display_Project_Pages = Project_Page_Items.map((e, index, array) => {
+    const Display_Project_Pages = Project_Page_Items.map((e) => {
         return (
             <Project_Page
+                key={e.id}
                 id={e.id}
                 title={e.title}
                 content={e.content}
