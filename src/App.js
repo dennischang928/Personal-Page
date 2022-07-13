@@ -58,12 +58,11 @@ const App = () => {
 
 
     useEffect(() => {
-        const body = document.body;
         if (IsList_Opened) {
-            disableBodyScroll(body)
+            disableBodyScroll(Project_PageRef.current)
         }
         else {
-            enableBodyScroll(body)
+            enableBodyScroll(Project_PageRef.current)
         }
     }, [IsList_Opened])
 
