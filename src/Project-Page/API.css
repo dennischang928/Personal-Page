@@ -1,0 +1,37 @@
+@media screen and (min-width: 1000px) {
+    #MProject_Section {
+        display: none;
+    }
+
+    .Project_Page_container {
+        width: 100%;
+        min-height: 80vh;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #NProject_Section {
+        display: none;
+    }
+
+    .Project_Page_container {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        padding: 15% 15%;
+        width: 100%;
+        display: flex;
+        height: fit-content;
+
+    }
+}
