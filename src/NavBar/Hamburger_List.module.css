@@ -1,20 +1,49 @@
 .Hamburger_List {
-    background-color: var(--Orange-color);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 0;
+    flex-direction: column;
+    justify-content: center;
 
+    height: 0vh;
+    background-color: var(--Orange-color);
+    opacity: 80%;
     -webkit-transition: height 1s;
     -moz-transition: height 1s;
     -ms-transition: height 1s;
     -o-transition: height 1s;
     transition: height 1s;
     overflow: hidden;
-    
+
     position: absolute;
     left: 0;
     right: 0;
     top: 6.5vh;
     bottom: 0;
+
+
+}
+
+.Hamburger_List ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+
+    -webkit-transition: font-size 0.2s;
+    -moz-transition: font-size 0.2s;
+    -ms-transition: font-size 0.2s;
+    -o-transition: font-size 0.2s;
+    transition: font-size 0.2s;
+
+    height: 100%;
+    margin-bottom: 6.5vh;
+
+    font-size: calc(100% + 0.1vmin);
+    list-style-type: none;
+
+}
+
+.Hamburger_List ul a:active {
+    cursor: pointer;
+    font-size: calc(100% + 0.4vmin);
 }

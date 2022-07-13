@@ -34,7 +34,6 @@ const Detailed_Project_Page = ({ Cover_Image,
         </ImageList>
     )
 
-    console.log(Display_Abstract_Images)
     return (
         <div className={styles.container}>
             <div className={styles.Cover_Section}>

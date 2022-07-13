@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import Hamburger_List from "./Hamburger_List";
 import { Sling as Hamburger } from 'hamburger-react'
@@ -6,9 +6,8 @@ import Collapse from '@mui/material/Collapse';
 
 import styles from "./NavBar.module.css"
 
-const NavBar = ({ title, onIntroduction_Page_Click, onAboutMe_Page_Click, onProject_Page_Click, onContact_Click }) => {
+const NavBar = ({ title, onIntroduction_Page_Click, onAboutMe_Page_Click, onProject_Page_Click, onContact_Click, IsList_Opened, setIsList_Opened }) => {
 
-    const [IsList_Opened, setIsList_Opened] = useState(false);
     return (
         <div className={styles.container}>
             <div className={styles.nav}>
@@ -24,11 +23,28 @@ const NavBar = ({ title, onIntroduction_Page_Click, onAboutMe_Page_Click, onProj
                     </ul>
                 </div>
                 <div className={styles.MRight_Container}>
-
-                    <Hamburger size={20} toggle={(e) => { onProject_Page_Click(); setIsList_Opened(e); }} toggled={IsList_Opened} />
+                    <Hamburger size={20} toggle={setIsList_Opened} toggled={IsList_Opened} />
                 </div>
             </div>
-            <Hamburger_List IsList_Opened={IsList_Opened} />
+            <Hamburger_List
+                onIntroduction_Page_Click={() => {
+                    setIsList_Opened(false);
+                    onIntroduction_Page_Click();
+                }}
+                onAboutMe_Page_Click={() => {
+                    setIsList_Opened(false);
+                    onAboutMe_Page_Click();
+                }}
+                onProject_Page_Click={() => {
+                    setIsList_Opened(false);
+                    onProject_Page_Click();
+                }}
+                onContact_Click={() => {
+                    setIsList_Opened(false);
+                    onContact_Click();
+                }}
+                IsList_Opened={IsList_Opened}
+            />
         </div>
 
     )

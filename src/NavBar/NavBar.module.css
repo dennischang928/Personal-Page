@@ -1,15 +1,15 @@
 .container {
     position: sticky;
-    opacity: 80%;
     top: 0;
     z-index: 99;
 }
 
 .nav {
-    background-color: var(--Orange-color);
+    opacity: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--Orange-color);
 }
 
 .nav .Left_Container,
@@ -35,11 +35,23 @@
 
 
 .nav .NRight_Container ul li a {
+    -webkit-transition: font-size 0.2s;
+    -moz-transition: font-size 0.2s;
+    -ms-transition: font-size 0.2s;
+    -o-transition: font-size 0.2s;
+    transition: font-size 0.2s;
+
+    font-size: calc(100% + 0.01vmin);
+
     cursor: pointer;
     color: #000;
     text-decoration: none;
-    width: 28px;
+    width: fit-content;
     margin: 0 15px;
+}
+
+.nav .NRight_Container ul li a:hover {
+    font-size: calc(100% + 0.2vmin);
 }
 
 

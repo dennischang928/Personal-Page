@@ -4,7 +4,7 @@ const Interest_Section = ({ styles }) => {
     return (
         <div className={styles.Interests_Part}>
             <h1>
-                My interests:
+                My interests
             </h1>
             <ul>
                 <li className={styles.interest}><img src={require("../Images/headphones-solid 1.svg").default} />

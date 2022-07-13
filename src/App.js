@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react"
 import { Routes, Route, Link } from "react-router-dom";
 import ScrollToTop from "./Scroll_to_top";
 import { useInView } from 'react-hook-inview'
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 
 import Introduction_Page from "./Introduction-Page/Introduction-Page"
@@ -20,7 +21,7 @@ const App = () => {
     const Project_PageRef = useRef(null);
     const ContactRef = useRef(null);
 
-    
+    const [IsList_Opened, setIsList_Opened] = useState(false);
 
     const scrollTo_Introduction_PageRef = () => {
         try {
@@ -54,6 +55,17 @@ const App = () => {
             window.location.href = "./";
         }
     }
+
+
+    useEffect(() => {
+        const body = document.body;
+        if (IsList_Opened) {
+            disableBodyScroll(body)
+        }
+        else {
+            enableBodyScroll(body)
+        }
+    }, [IsList_Opened])
 
 
     const Display_Project_Pages = Project_Page_Items.map((e, index, array) => {
@@ -93,6 +105,11 @@ const App = () => {
                             onAboutMe_Page_Click={scrollTo_AboutMe_PageRef}
                             onProject_Page_Click={scrollTo_Project_PageRef}
                             onContact_Click={scrollTo_ContactRef}
+                            IsList_Opened={IsList_Opened}
+                            setIsList_Opened={(e) => {
+                                setIsList_Opened(e);
+                                scrollTo_Project_PageRef();
+                            }}
                         />
 
                         {Display_Project_Pages}
@@ -106,7 +123,6 @@ const App = () => {
 
 
     const AllProjects_Detail_Pages = Project_Page_Items.map((e, index, array) => {
-        console.log(`/${e.id}`)
         return (
             <Route key={e.id} path={`/${e.id}`} element={
 
@@ -117,6 +133,10 @@ const App = () => {
                         onAboutMe_Page_Click={scrollTo_AboutMe_PageRef}
                         onProject_Page_Click={scrollTo_Project_PageRef}
                         onContact_Click={scrollTo_ContactRef}
+                        setIsList_Opened={() => {
+                            setIsList_Opened(!IsList_Opened);
+                        }}
+                        IsList_Opened={IsList_Opened}
                     />
                     <Detailed_Project_Page
                         title={e.title}

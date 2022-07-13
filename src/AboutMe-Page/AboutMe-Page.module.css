@@ -15,7 +15,7 @@
 
 
     .AboutMe_Section .Content_Part h1 {
-        font-size: calc(100% + 5Vmin)
+        font-size: calc(100% + 5vmin)
     }
 
     .AboutMe_Section .Content_Part .Mparagraph {
@@ -97,7 +97,7 @@
     }
 
     .AboutMe_Section .Content_Part h1 {
-        font-size: calc(100% + 7Vmin);
+        font-size: calc(100% + 4vmin)
     }
 
     .AboutMe_Section .Content_Part .Nparagraph {
@@ -109,7 +109,7 @@
         margin-top: 2vh;
         text-align: middle;
         line-height: 170%;
-        font-size: calc(100% + 0.0001Vmin);
+        font-size: calc(100% + 0.0001vmin);
     }
 
 
@@ -121,7 +121,7 @@
     }
 
     .Interests_Part h1 {
-        font-size: 2.2rem;
+        font-size: calc(100% + 3vmin)
     }
 
 
@@ -164,7 +164,7 @@
     }
 
     .interest img {
-        width: 37%;
+        width: 40%;
     }
 }
 

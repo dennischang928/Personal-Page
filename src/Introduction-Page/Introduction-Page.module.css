@@ -10,13 +10,13 @@
 
 .container h1 {
     margin: 0;
-    font-size: calc(100% + 5vw);
+    font-size: calc(100% + 5vmin);
 
 }
 
 .container h2 {
     margin: 0;
-    font-size: calc(100% + 2vw);
+    font-size: calc(100% + 2vmin);
 }
 
 @media screen and (min-aspect-ratio: 1/1) {
