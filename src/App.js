@@ -2,8 +2,7 @@ import React, { useEffect, useRef, useState } from "react"
 import { Routes, Route, Link } from "react-router-dom";
 import ScrollToTop from "./Scroll_to_top";
 import { useInView } from 'react-hook-inview'
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
-
+import { disableScroll, enableScroll } from "./Scrolling_Control"
 
 import Introduction_Page from "./Introduction-Page/Introduction-Page"
 import Nav from "./Nav/Nav"
@@ -22,6 +21,17 @@ const App = () => {
     const ContactRef = useRef(null);
 
     const [IsList_Opened, setIsList_Opened] = useState(false);
+
+
+    useEffect(() => {
+        if (IsList_Opened) {
+            disableScroll();
+        }
+        else {
+            enableScroll();
+        }
+    }, [IsList_Opened])
+
 
     const scrollTo_Introduction_PageRef = () => {
         try {
@@ -55,16 +65,6 @@ const App = () => {
             window.location.href = "./";
         }
     }
-
-
-    // useEffect(() => {
-    //     if (IsList_Opened) {
-    //         disableBodyScroll(Project_PageRef.current)
-    //     }
-    //     else {
-    //         enableBodyScroll(Project_PageRef.current)
-    //     }
-    // }, [IsList_Opened])
 
 
     const Display_Project_Pages = Project_Page_Items.map((e, index, array) => {
