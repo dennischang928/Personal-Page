@@ -57,14 +57,14 @@ const App = () => {
     }
 
 
-    useEffect(() => {
-        if (IsList_Opened) {
-            disableBodyScroll(Project_PageRef.current)
-        }
-        else {
-            enableBodyScroll(Project_PageRef.current)
-        }
-    }, [IsList_Opened])
+    // useEffect(() => {
+    //     if (IsList_Opened) {
+    //         disableBodyScroll(Project_PageRef.current)
+    //     }
+    //     else {
+    //         enableBodyScroll(Project_PageRef.current)
+    //     }
+    // }, [IsList_Opened])
 
 
     const Display_Project_Pages = Project_Page_Items.map((e, index, array) => {
