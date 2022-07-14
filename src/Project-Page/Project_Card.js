@@ -11,7 +11,7 @@ const Project_Card = ({ id, title, content, thumbnail, tags, IsSrolledTo }) => {
 
     const { transform, opacity } = useSpring({
         opacity: IsFlipped ? 1 : 0,
-        transform: `perspective(600px) rotateX(${IsFlipped ? 180 : 0}deg) scale(${IsSrolledTo ? 0.95 : 1})`,
+        transform: `perspective(600px) rotateX(${IsFlipped ? 180 : 0}deg) scale(${IsSrolledTo ? 0.95 : 1.05})`,
         config: { mass: 100, tension: 10000, friction: 800 },
     })
 

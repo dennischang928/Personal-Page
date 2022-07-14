@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react"
 import { Routes, Route, Link } from "react-router-dom";
-import ScrollToTop from "./Scroll_to_top";
-import { useInView } from 'react-hook-inview'
+
 import { disableScroll, enableScroll } from "./Scrolling_Control"
 
 import Introduction_Page from "./Introduction-Page/Introduction-Page"
@@ -127,6 +126,7 @@ const App = () => {
 
                 <div>
                     <NavBar
+                        id={e.id}
                         title={e.title}
                         onIntroduction_Page_Click={scrollTo_Introduction_PageRef}
                         onAboutMe_Page_Click={scrollTo_AboutMe_PageRef}
@@ -138,6 +138,7 @@ const App = () => {
                         IsList_Opened={IsList_Opened}
                     />
                     <Detailed_Project_Page
+                        id={e.id}
                         title={e.title}
                         explaination={e.explaination}
                         tags={e.tags}

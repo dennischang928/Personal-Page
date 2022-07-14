@@ -25,136 +25,306 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.container {
-    background-color: var(--PaperGrey-color);
-    width: 100%;
-    /* height: 100vh; */
+@media screen and (min-width: 1000px) {
+    .Mcontainer {
+        display: none;
+    }
+
+    .Ncontainer {
+        background-color: var(--PaperGrey-color);
+        width: 100%;
+    }
+
+    .Cover_Section {
+        padding: 0 15%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Cover_Section img {
+        width: 100%;
+        height: 60vh;
+        object-fit: cover;
+    }
+
+    .Cover_Description {
+        top: -30px;
+        background: linear-gradient(180deg, rgba(255, 191, 99, 0.8) 0%, rgba(255, 191, 99, 0.8) 40.25%, rgba(255, 191, 99, 0.6) 70%, rgba(255, 191, 99, 0) 100%);
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: fit-content;
+        padding: 1.5% 2% 3%;
+    }
+
+    .Cover_Description .Tag_Section ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Cover_Description .Tag_Section ul li {
+        font-size: 0.9rem;
+        border-radius: 0.5em;
+        margin-top: 1%;
+        margin-right: 2%;
+        list-style: none;
+        background-color: var(--Tag-Color);
+        color: var(--PaperWhite-color);
+        padding: 1.5% 2%;
+        text-align: center;
+        width: fit-content;
+        height: fit-content;
+
+    }
+
+    .Cover_Description .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .Cover_Description .right p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: right;
+    }
+
+    .Cover_Description .right .details_BTN {
+
+        background-color: var(--Tag-Color);
+        color: var(--PaperWhite-color);
+    }
+
+    .Cover_Description .right .details_BTN div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10%;
+        justify-content: center;
+    }
+
+    .Cover_Description .left .Tag_Section {
+        margin-top: 2%;
+    }
+
+    .Description_Section {
+        padding: 1% 16.5%
+    }
+
+    .Description_Section .Description p,
+    .Abstraction .Abstract_Content p {
+        margin-top: 20px;
+        font-size: 1.4rem;
+        line-height: 140%;
+        height: auto;
+        width: 100%;
+    }
+
+    .Abstraction {
+        display: flex;
+        margin-top: 4%;
+    }
+
+    .Abstraction .AbstractImages {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .Abstraction .AbstractImages img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .Abstraction .AbstractImages * {
+        margin-bottom: 5%;
+    }
+
+
+    .Abstraction .Abstract_Content {
+        width: 170%;
+        margin-left: 2%;
+    }
+
+    .photo_section {
+        padding: 2%;
+        margin-right: 15%;
+        margin-left: 15%;
+        line-height: 0;
+        background-color: var(--Orange-color);
+    }
 }
 
-.Cover_Section {
-    padding: 0 15%;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.Cover_Section img {
-    width: 100%;
-    height: 60vh;
-    object-fit: cover;
-}
-
-.Cover_Description {
-    top: -30px;
-    background: linear-gradient(180deg, rgba(255, 191, 99, 0.8) 0%, rgba(255, 191, 99, 0.8) 40.25%, rgba(255, 191, 99, 0.6) 70%, rgba(255, 191, 99, 0) 100%);
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: fit-content;
-    padding: 1.5% 2% 3%;
-}
-
-.Cover_Description .left .Tag_Section ul {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.Cover_Description .left .Tag_Section ul li {
-    font-size: 0.9rem;
-    border-radius: 0.5em;
-    margin-top: 1%;
-    margin-right: 2%;
-    list-style: none;
-    background-color: var(--Tag-Color);
-    color: var(--PaperWhite-color);
-    padding: 1.5% 2%;
-    text-align: center;
-    width: fit-content;
-    height: fit-content;
-
-}
-
-.Cover_Description .right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.Cover_Description .left h1 {
-    font-size: 3rem;
-    line-height: 4rem;
-}
-
-.Cover_Description .right p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    text-align: right;
-}
-
-.Cover_Description .right .details_BTN {
-
-    background-color: var(--Tag-Color);
-    color: var(--PaperWhite-color);
-}
-
-.Cover_Description .right .details_BTN div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10%;
-    justify-content: center;
-}
-
-.Cover_Description .left .Tag_Section {
-    margin-top: 2%;
-}
-
-.Description_Section {
-    padding: 1% 16.5%
-}
-
-.Description_Section .Description p,
-.Abstraction .Abstract_Content p {
-    margin-top: 20px;
-    font-size: 1.4rem;
-    line-height: 140%;
-    height: auto;
-    width: 100%;
-}
-
-.Abstraction {
-    display: flex;
-    margin-top: 4%;
-}
-
-.Abstraction .AbstractImages {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-}
-
-.Abstraction .AbstractImages img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.Abstraction .AbstractImages * {
-    margin-bottom: 5%;
-}
 
 
-.Abstraction .Abstract_Content {
-    width: 170%;
-    margin-left: 2%;
-}
 
-.photo_section {
-    padding: 2%;
-    margin-right: 15%;
-    margin-left: 15%;
-    line-height: 0;
-    background-color: var(--Orange-color);
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .Ncontainer {
+        display: none;
+    }
+
+    .Mcontainer {
+        background-color: var(--PaperGrey-color);
+        width: 100%;
+    }
+
+    .Cover_Section {
+        padding: 0 0%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    .Cover_Section img {
+        width: 100%;
+        height: 35vh;
+        object-fit: cover;
+    }
+
+    .Cover_Section .Cover_Description {
+        top: -30px;
+        background: linear-gradient(180deg, rgba(255, 191, 99, 0.8) 0%, rgba(255, 191, 99, 0.8) 40.25%, rgba(255, 191, 99, 0.6) 70%, rgba(255, 191, 99, 0) 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1vh;
+        width: 100%;
+        height: fit-content;
+        padding: 3% 4%;
+    }
+
+    .Cover_Section .Cover_Description h1 {
+        font-size: calc(100% + 3vmin);
+    }
+
+    .Cover_Section .Cover_Description p {
+        font-size: calc(100% - 0.3vmin);
+    }
+
+    .Cover_Description .Tag_Section ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Cover_Description .Tag_Section ul li {
+        font-size: calc(100% - 1.2vmin);
+        border-radius: 0.5em;
+        margin-top: 1%;
+        margin-right: 2%;
+        list-style: none;
+        background-color: var(--Tag-Color);
+        color: var(--PaperWhite-color);
+        padding: 1.7% 3%;
+        text-align: center;
+        width: fit-content;
+        height: fit-content;
+
+    }
+
+
+    .Cover_Description .details_BTN {
+        height: fit-content;
+        background-color: var(--Tag-Color);
+        color: var(--PaperWhite-color);
+    }
+
+    .Cover_Description .details_BTN div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10%;
+        justify-content: center;
+    }
+
+    .Cover_Description .Tag_Section {
+        margin-top: 2%;
+    }
+
+    .Cover_Description p.CreatedTime {
+        font-size: calc(100% - 0.3vmin);
+        line-height: 3vh;
+        word-spacing: -0.2vw;
+        text-align: end;
+    }
+
+    .Description_Section {
+        padding: 1% 10%;
+    }
+
+    .Description_Section .Description p,
+    .Abstraction .Abstract_Content p {
+        margin-top: 20px;
+        font-size: calc(100% + 0.2vmin);
+        line-height: 140%;
+        height: auto;
+        width: 100%;
+    }
+
+    .Description_Section .Description a,
+    .Abstraction .Abstract_Content a {
+        word-break: break-all;
+    }
+
+    .Description_Section .Description h1,
+    .Abstraction .Abstract_Content h1 {
+        font-size: calc(100% + 3vmin);
+    }
+
+    .Abstraction {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4%;
+    }
+
+    .Abstraction .AbstractImages {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .Abstraction .AbstractImages img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .Abstraction .AbstractImages * {
+        margin-bottom: 5%;
+    }
+
+    .Abstraction iframe {
+        width: 100%;
+    }
+
+    .Abstraction .Abstract_Content {
+        width: 100%;
+        margin-left: 2%;
+        margin-bottom: 3%;
+    }
+
+    .photo_section {
+        padding: 4% 6%;
+        margin: 0 0%;
+        line-height: 0;
+        background-color: var(--Orange-color);
+    }
 }
