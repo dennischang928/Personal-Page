@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Nstyles from "./NProject-Page.module.css";
 import Mstyles from "./MProject-Page.module.css";
 import "./API.css"
@@ -6,12 +6,35 @@ import Button from '@mui/material/Button';
 
 import Project_Card from "./Project_Card";
 
-const Project_Page = ({ id, title, content, thumbnail, backgroundImage, tags, }) => {
+const Project_Page = ({ id, title, content, thumbnail, backgroundImage, tags }) => {
+    const [PageScrolledIn, setPageScrolledIn] = useState("");
+
+    const ScrolledIn_Func = () => {
+        var reveals = document.querySelectorAll(".Project_Page_container");
+        var Is_Any_Scrolled_In = false;
+
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 500;
+
+            if (elementTop < windowHeight - elementVisible) {
+                Is_Any_Scrolled_In = true;
+                setPageScrolledIn(reveals[i].id);
+            }
+        }
+        if (Is_Any_Scrolled_In !== true) {
+            setPageScrolledIn("");
+        }
+    }
+
+    window.addEventListener("scroll", ScrolledIn_Func);
+
 
     return (
         <div className="Project_Page_container" style={{
             backgroundImage: `url(${backgroundImage})`,
-        }}>
+        }} id={id}>
             <div className={Nstyles.Project_Section}
                 id="NProject_Section"
             >
@@ -41,8 +64,10 @@ const Project_Page = ({ id, title, content, thumbnail, backgroundImage, tags, })
 
             <div className={Mstyles.Project_Section}
                 id="MProject_Section"
+
             >
                 <Project_Card
+                    IsSrolledTo={PageScrolledIn == id ? false : true}
                     key={id}
                     id={id}
                     title={title}

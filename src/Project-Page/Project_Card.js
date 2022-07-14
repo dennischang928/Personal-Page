@@ -4,23 +4,25 @@ import Button from '@mui/material/Button';
 
 import styles from "./Project_Card.module.css"
 
-const Project_Card = ({ id, title, content, thumbnail, tags }) => {
+const Project_Card = ({ id, title, content, thumbnail, tags, IsSrolledTo }) => {
+
     const [IsFlipped, setIsFlipped] = useState(false)
+
 
     const { transform, opacity } = useSpring({
         opacity: IsFlipped ? 1 : 0,
-        transform: `perspective(600px) rotateX(${IsFlipped ? 180 : 0}deg)`,
+        transform: `perspective(600px) rotateX(${IsFlipped ? 180 : 0}deg) scale(${IsSrolledTo ? 0.95 : 1})`,
         config: { mass: 100, tension: 10000, friction: 800 },
     })
 
     return (
-        <div className={styles.container} onClick={() => setIsFlipped(!IsFlipped)}>
+        <div className={styles.container} id={id} onClick={() => setIsFlipped(!IsFlipped)}>
             <div className={styles.title}>
                 <h1>{title}</h1>
             </div>
             <div className={styles.ImageSection}>
                 <a.img className={styles.thumbnail} id="thumbnail" src={thumbnail}
-                    style={{ opacity: opacity.to(o => 1 - o), transform }}
+                    style={{ opacity: opacity.to(o => 1 - o), transform, }}
                 />
 
                 <a.div

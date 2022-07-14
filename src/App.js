@@ -22,7 +22,6 @@ const App = () => {
 
     const [IsList_Opened, setIsList_Opened] = useState(false);
 
-
     useEffect(() => {
         if (IsList_Opened) {
             disableScroll();

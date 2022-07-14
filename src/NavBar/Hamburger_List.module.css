@@ -38,12 +38,12 @@
     height: 100%;
     margin-bottom: 6.5vh;
 
-    font-size: calc(100% + 0.1vmin);
+    font-size: calc(100% + 0.4vmin);
     list-style-type: none;
 
 }
 
 .Hamburger_List ul a:active {
     cursor: pointer;
-    font-size: calc(100% + 0.4vmin);
+    font-size: calc(100% + 0.7vmin);
 }
