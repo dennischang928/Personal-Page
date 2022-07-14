@@ -9,7 +9,7 @@ const Project_Card = ({ id, title, content, thumbnail, tags }) => {
     const { transform, opacity } = useSpring({
         opacity: IsFlipped ? 1 : 0,
         transform: `perspective(600px) rotateX(${IsFlipped ? 180 : 0}deg)`,
-        config: { mass: 5, tension: 500, friction: 80 },
+        config: { mass: 100, tension: 10000, friction: 800 },
     })
 
     return (
@@ -32,6 +32,11 @@ const Project_Card = ({ id, title, content, thumbnail, tags }) => {
                 >
                     <div className={styles.content}>
                         {content}
+                    </div>
+                    <div className={styles.Tag_Section}>
+                        <ul>
+                            {tags.map((e) => { return (<li key={e}>{e}</li>) })}
+                        </ul>
                     </div>
                 </a.div>
             </div>

@@ -39,7 +39,7 @@ export const Project1 = {
     ),
     thumbnail: Project1_Thumbnail,
     backgroundImage: Project1_Background,
-    tags: ["#Rubik's_Cube", "#Fusion_360", "#Computer_Vision", "#C++", "#Eagle_PCB_design", "#3D-printing", "#thistlethwaite's_algorithm", "#Servo_Motor", "#Stepper_Motor"],
+    tags: ["#Rubik's_Cube", "#Fusion_360", "#C++", "#Computer_Vision", "#Eagle_PCB_design", "#3D-printing", "#Servo_Motor", "#Stepper_Motor", "#thistlethwaite's_algorithm"],
     detail_of_the_project_url: "https://hackaday.io/project/182511-rubiks-cube-solving-robot",
     details_BTN_text: (<div>Details <br />(Hackaday)</div>),
     embed_video: (
