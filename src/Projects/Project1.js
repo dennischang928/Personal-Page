@@ -30,7 +30,7 @@ export const Project1 = {
     id: "Rubik's_Cube_Solver",
     title: "Rubik’s Cube Solver",
     content: (
-        <p>
+        <p style={{ color: "black" }}>
             In recent years, Computer Vision becomes more popular. Computer Vision has a lot of applications, such as object detection, event detection, video tracking, and color recognition. To familiarize myself in the field, I decide to develop a robot that solves a Rubik’s Cube using Computer Vision.
             <br />
             <br />
@@ -56,7 +56,7 @@ export const Project1 = {
                 <br />
                 <br />
                 Details (Hackaday): <a target="_blank" href="https://hackaday.io/project/182511-rubiks-cube-solving-robot">https://hackaday.io/project/182511-rubiks-cube-solving-robot</a>
-                <br/>
+                <br />
                 Project Github Page: <a target="_blank" href="https://github.com/dennischang928/Rubik-s-Cube-Solving-Robot">https://github.com/dennischang928/Rubik-s-Cube-Solving-Robot</a>
             </p>
         </div>

@@ -42,7 +42,14 @@ const Project_Page = ({ id, title, content, thumbnail, backgroundImage, tags, })
             <div className={Mstyles.Project_Section}
                 id="MProject_Section"
             >
-                <Project_Card thumbnail={thumbnail}/>
+                <Project_Card
+                    key={id}
+                    id={id}
+                    title={title}
+                    content={content}
+                    thumbnail={thumbnail}
+                    tags={tags}
+                />
             </div>
 
         </div >
