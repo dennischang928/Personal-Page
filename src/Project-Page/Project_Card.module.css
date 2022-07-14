@@ -12,6 +12,16 @@
 }
 
 .container .thumbnail {
+    box-shadow:
+    1.5px 2px 1.9px rgba(0, 0, 0, 0.12),
+    3.4px 4.7px 4.3px rgba(0, 0, 0, 0.089),
+    6.2px 8.5px 7.7px rgba(0, 0, 0, 0.075),
+    10.3px 14.1px 12.8px rgba(0, 0, 0, 0.065),
+    16.9px 23.3px 21.2px rgba(0, 0, 0, 0.055),
+    29.6px 40.7px 37px rgba(0, 0, 0, 0.045),
+    64px 88px 80px rgba(0, 0, 0, 0.031)
+  ;
+  
     width: 100%;
     height: auto;
     background-position: center;
@@ -26,6 +36,7 @@
 }
 
 .content_container {
+
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -62,10 +73,26 @@
     margin-top: 1%;
     margin-right: 2%;
     list-style: none;
-    background-color: var( --Orange-color);
+    background-color: var(--Orange-color);
     color: var(--Tag-color);
     padding: 1.7% 3%;
     text-align: center;
     width: fit-content;
     height: fit-content;
+}
+
+.View_Project_Button_Container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.View_Project_Button_Container Button:hover {
+    color: var(--Orange-color);
+    border-color: var(--Orange-color);
+}
+
+.View_Project_Button_Container Button {
+    margin-right: 1vw;
+    color: var(--Orange-color);
+    border-color: var(--Orange-color);
 }

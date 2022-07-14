@@ -22,16 +22,35 @@
     align-items: center;
     justify-content: center;
 }
-.content .contact img{
-    width: 40px;
+
+@media screen and (min-width: 1000px) {
+    .content .contact img {
+        width: 40px;
+    }
+
+    .content .contact a:not(:last-child) {
+        margin-right: 30%;
+    }
+
+    .content .copyright {
+        margin-top: 10%;
+        font-size: 0.9em;
+        color: var(--PaperWhite-color);
+    }
 }
 
-.content .contact a:not(:last-child) {
-    margin-right: 30%;
-}
+@media screen and (max-width: 1000px) {
+    .content .contact img {
+        width: 30px;
+    }
 
-.content .copyright {
-    margin-top: 10%;
-    font-size: 0.9em;
-    color: var(--PaperWhite-color);
+    .content .contact a:not(:last-child) {
+        margin-right: 30%;
+    }
+
+    .content .copyright {
+        margin-top: 10%;
+        font-size: 0.8em;
+        color: var(--PaperWhite-color);
+    }
 }

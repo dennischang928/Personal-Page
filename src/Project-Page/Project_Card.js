@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useSpring, a } from '@react-spring/web'
+import Button from '@mui/material/Button';
 
 import styles from "./Project_Card.module.css"
 
@@ -37,6 +38,13 @@ const Project_Card = ({ id, title, content, thumbnail, tags }) => {
                         <ul>
                             {tags.map((e) => { return (<li key={e}>{e}</li>) })}
                         </ul>
+                    </div>
+                    <div className={styles.View_Project_Button_Container}>
+                        <a href={`/${id}`} style={{ textDecoration: "none", color: "#000" }}>
+                            <Button variant="outlined" size="small" className={styles.View_Project_Button}>
+                                View Project
+                            </Button>
+                        </a>
                     </div>
                 </a.div>
             </div>
