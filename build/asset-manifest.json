@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.60bfdb98.css",
-    "main.js": "/static/js/main.3fa81f58.js",
+    "main.js": "/static/js/main.9f512f63.js",
     "static/media/Gallery_Image5.png": "/static/media/Gallery_Image5.c131eea94df6f88d7e3c.png",
     "static/media/Gallery_Image3.png": "/static/media/Gallery_Image3.15f26418c3df6b89564a.png",
     "static/media/Gallery_Image10.png": "/static/media/Gallery_Image10.13581ca4be2bcd15fc35.png",
@@ -55,10 +55,10 @@
     "static/media/facebook-brands 1.svg": "/static/media/facebook-brands 1.68dcd96df9fb7a4ef25249e7b06f231e.svg",
     "static/media/envelope-solid 1.svg": "/static/media/envelope-solid 1.6977d7b3bf7f017a3fd8cd51e30ea01e.svg",
     "main.60bfdb98.css.map": "/static/css/main.60bfdb98.css.map",
-    "main.3fa81f58.js.map": "/static/js/main.3fa81f58.js.map"
+    "main.9f512f63.js.map": "/static/js/main.9f512f63.js.map"
   },
   "entrypoints": [
     "static/css/main.60bfdb98.css",
-    "static/js/main.3fa81f58.js"
+    "static/js/main.9f512f63.js"
   ]
 }
