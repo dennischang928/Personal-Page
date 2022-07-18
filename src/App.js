@@ -83,7 +83,7 @@ const App = () => {
 
     const Home_Page =
         (
-            <Route path="/" element={
+            <Route exact path="/" element={
                 <div >
                     <Nav isVisible={true}
                         onIntroduction_Page_Click={scrollTo_Introduction_PageRef}
