@@ -16,7 +16,7 @@ const Project_Page = ({ id, title, content, thumbnail, backgroundImage, tags }) 
         for (var i = 0; i < reveals.length; i++) {
             var windowHeight = window.innerHeight;
             var elementTop = reveals[i].getBoundingClientRect().top;
-            var elementVisible = 500;
+            var elementVisible = 1000;
 
             if (elementTop < windowHeight - elementVisible) {
                 Is_Any_Scrolled_In = true;
