@@ -9,7 +9,7 @@ const Introduction_Page = () => {
         <div className={styles.container}>
             <div className={styles.NIntro_section} id="Intro-section">
                 <div className={styles.left}>
-                    <img src={require("../Images/Intro.jpg")} alt="" />
+                    <img loading="lazy" src={require("../Images/Intro.jpg")} alt="" />
                 </div>
                 <div className={styles.middle}>
                     <TypeAnimation
@@ -31,7 +31,7 @@ const Introduction_Page = () => {
                     wrapper="h1"
                 />
                 <div className={styles.CroppedImage}>
-                    <img src={require("../Images/Intro.jpg")} alt="" />
+                    <img loading="lazy" src={require("../Images/Intro.jpg")} alt="" />
                 </div>
                 <TypeAnimation
                     cursor={false}

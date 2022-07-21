@@ -39,7 +39,7 @@ const Project_Page = ({ id, title, content, thumbnail, backgroundImage, tags }) 
                 id="NProject_Section"
             >
                 <div className={Nstyles.left}>
-                    <img src={thumbnail} />
+                    <img loading="lazy" src={thumbnail} />
                 </div>
                 <div className={Nstyles.right}>
                     <div className={Nstyles.title}>

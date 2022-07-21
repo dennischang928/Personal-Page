@@ -18,10 +18,10 @@ const Detailed_Project_Page = ({ Cover_Image,
     abstract,
     Gallery_Images }) => {
 
-    const Display_Cover_Image = <img loading="lazy" src={Cover_Image} alt="" />
+    const Display_Cover_Image = <img loading="lazy" loading="lazy" src={Cover_Image} alt="" />
 
     const Display_Abstract_Images = Abstract_Images.map((e, index) => {
-        return <img className={styles.Display_Abstract_Images} src={e} alt="" key={index} />
+        return <img loading="lazy" className={styles.Display_Abstract_Images} src={e} alt="" key={index} />
     })
 
     return (
@@ -69,7 +69,7 @@ const Detailed_Project_Page = ({ Cover_Image,
                         <ImageList variant="masonry" cols={3} gap={12}>
                             {Gallery_Images.map((e, index) => (
                                 <ImageListItem key={index} cols={2}>
-                                    <img src={e} />
+                                    <img loading="lazy" src={e} />
                                 </ImageListItem>
                             ))}
                         </ImageList>
@@ -118,7 +118,7 @@ const Detailed_Project_Page = ({ Cover_Image,
                         <ImageList variant="masonry" cols={2} gap={12}>
                             {Gallery_Images.map((e, index) => (
                                 <ImageListItem key={index} cols={2}>
-                                    <img src={e} />
+                                    <img loading="lazy" src={e} />
                                 </ImageListItem>
                             ))}
                         </ImageList>
