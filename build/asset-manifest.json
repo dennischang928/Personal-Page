@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.60bfdb98.css",
+    "main.css": "/static/css/main.359bf888.css",
     "main.js": "/static/js/main.f277366d.js",
     "static/media/Gallery_Image5.png": "/static/media/Gallery_Image5.c131eea94df6f88d7e3c.png",
     "static/media/Gallery_Image3.png": "/static/media/Gallery_Image3.15f26418c3df6b89564a.png",
@@ -46,19 +46,19 @@
     "static/media/Vector.svg": "/static/media/Vector.99568f144400d9eb870d5e4be2838e00.svg",
     "static/media/Game.svg": "/static/media/Game.8bd119044f636dbd1b7e334018e1067f.svg",
     "static/media/code-solid 1.svg": "/static/media/code-solid 1.ccd45efd5c60392f11e06516a7c56fd7.svg",
+    "index.html": "/index.html",
     "static/media/sheet-plastic-solid 1.svg": "/static/media/sheet-plastic-solid 1.2fddc9303543fe5bacfdb337f602a12d.svg",
     "static/media/house-solid 1.svg": "/static/media/house-solid 1.1454adcad5b4846cb561cca24f7e818f.svg",
     "static/media/info-solid 1.svg": "/static/media/info-solid 1.d0f646d575806421bdd51b952e712a70.svg",
     "static/media/linkedin-brands.svg": "/static/media/linkedin-brands.ff730ee4ce105463a7dc82757449be3c.svg",
-    "index.html": "/index.html",
     "static/media/headphones-solid 1.svg": "/static/media/headphones-solid 1.353e287cd51e2b755308d3ab261586b9.svg",
     "static/media/facebook-brands 1.svg": "/static/media/facebook-brands 1.68dcd96df9fb7a4ef25249e7b06f231e.svg",
     "static/media/envelope-solid 1.svg": "/static/media/envelope-solid 1.6977d7b3bf7f017a3fd8cd51e30ea01e.svg",
-    "main.60bfdb98.css.map": "/static/css/main.60bfdb98.css.map",
+    "main.359bf888.css.map": "/static/css/main.359bf888.css.map",
     "main.f277366d.js.map": "/static/js/main.f277366d.js.map"
   },
   "entrypoints": [
-    "static/css/main.60bfdb98.css",
+    "static/css/main.359bf888.css",
     "static/js/main.f277366d.js"
   ]
 }

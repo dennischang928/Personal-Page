@@ -20,10 +20,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
 
 @media screen and (min-width: 1000px) {
     .Mcontainer {
@@ -259,9 +255,9 @@ body {
     }
 
     .Cover_Description p.CreatedTime {
-        font-size: calc(100% - 0.3vmin);
-        line-height: 3vh;
-        word-spacing: -0.2vw;
+        font-size: calc(100% - 1.5vmin);
+        line-height: 2.4vh;
+        word-spacing: -0.3vw;
         text-align: end;
     }
 

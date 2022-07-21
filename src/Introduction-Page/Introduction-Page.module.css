@@ -10,13 +10,13 @@
 
 .container h1 {
     margin: 0;
-    font-size: calc(100% + 6vmin);
+    font-size: calc(100% + 5.2vmin);
 
 }
 
 .container h2 {
     margin: 0;
-    font-size: calc(100% + 2vmin);
+    font-size: calc(100% + 1.3vmin);
 }
 
 @media screen and (min-aspect-ratio: 1/1) {
@@ -59,6 +59,7 @@
         align-items: center;
         justify-content: center;
         background-color: var(--PaperWhite-color);
+        text-align: center;
     }
 
     .container .MIntro_section .CroppedImage {
