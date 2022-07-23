@@ -1,8 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 
 import Hamburger_List from "./Hamburger_List";
-import { Sling as Hamburger } from 'hamburger-react'
-import Collapse from '@mui/material/Collapse';
+import { Squash as Hamburger } from 'hamburger-react'
 
 import styles from "./NavBar.module.css"
 
