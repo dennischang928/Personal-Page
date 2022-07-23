@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.359bf888.css",
+    "main.css": "/static/css/main.df8fb3d4.css",
     "main.js": "/static/js/main.f277366d.js",
     "static/media/Gallery_Image5.png": "/static/media/Gallery_Image5.c131eea94df6f88d7e3c.png",
     "static/media/Gallery_Image3.png": "/static/media/Gallery_Image3.15f26418c3df6b89564a.png",
@@ -54,11 +54,11 @@
     "static/media/headphones-solid 1.svg": "/static/media/headphones-solid 1.353e287cd51e2b755308d3ab261586b9.svg",
     "static/media/facebook-brands 1.svg": "/static/media/facebook-brands 1.68dcd96df9fb7a4ef25249e7b06f231e.svg",
     "static/media/envelope-solid 1.svg": "/static/media/envelope-solid 1.6977d7b3bf7f017a3fd8cd51e30ea01e.svg",
-    "main.359bf888.css.map": "/static/css/main.359bf888.css.map",
+    "main.df8fb3d4.css.map": "/static/css/main.df8fb3d4.css.map",
     "main.f277366d.js.map": "/static/js/main.f277366d.js.map"
   },
   "entrypoints": [
-    "static/css/main.359bf888.css",
+    "static/css/main.df8fb3d4.css",
     "static/js/main.f277366d.js"
   ]
 }
