@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react"
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import { disableScroll, enableScroll } from "./Scrolling_Control"
 
 import Introduction_Page from "./Introduction-Page/Introduction-Page"
-import Nav from "./Nav/Nav"
+
 import AboutMe_Page from "./AboutMe-Page/AboutMe-Page"
 import NavBar from "./NavBar/NavBar"
 import Project_Page from "./Project-Page/Project-Page"
@@ -85,11 +85,7 @@ const App = () => {
         (
             <Route exact path="/" element={
                 <div >
-                    <Nav isVisible={true}
-                        onIntroduction_Page_Click={scrollTo_Introduction_PageRef}
-                        onAboutMe_Page_Click={scrollTo_AboutMe_PageRef}
-                        onProject_Page_Click={scrollTo_Project_PageRef}
-                        onContact_Click={scrollTo_ContactRef} />
+                    
                     <div ref={Introduction_PageRef}>
                         <Introduction_Page />
                     </div>
